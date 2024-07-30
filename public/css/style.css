@@ -1,0 +1,99 @@
+body {
+  background-image: url("/images/360_F_497809944_FMo3DO6j7XSlb9rZKOlnqaaWoJhuZXBm.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+
+#welcome,#error{
+  transform: translateY(45px);
+}
+
+#location{
+  margin-top: 70px;
+}
+
+#welcome{
+  text-align: center;
+}
+
+#location,#forecast,#longitude,#latitude,#error{
+  display:none;
+}
+
+#welcome,#location,#forecast,#longitude,#latitude{
+  width:100%;
+  color: rgb(15, 131, 104);
+  background-color:rgba(229, 247, 36,0.9);
+  height:40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding-left:5px;
+  padding-top:20px;
+  width:1510px;
+  margin-left: 1px;
+}
+#error{
+  text-align: center;
+  color:rgb(252, 222, 222);
+  background-color: rgb(215, 108, 103);
+  height:40px;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.inp{
+  position: fixed;
+  background-color:rgba(229, 247, 36, 0.7);
+  height:50px;
+  width:100%;
+  left:0;
+  top:0;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+#address{
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(204, 246, 114);
+  margin-top: 5px;
+  height:35px;
+  width:200px;
+  border-radius: 20px;
+  border: 2px solid rgb(227, 255, 134);
+}
+
+#address::placeholder{
+  text-align: center;
+  color: rgb(24, 181, 145);
+}
+
+form button{
+  color: rgb(24, 181, 145);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(204, 246, 114);
+  height:40px;
+  width:200px;
+  border-radius: 20px;
+  border: 2px solid rgb(227, 255, 134);
+}
+
+form button:focus{
+  color: rgb(204, 246, 114);
+  background-color: rgb(24, 181, 145); 
+}
+
+#address:focus{
+  background-color: rgb(24, 181, 145); 
+}
+
+#address:focus::placeholder{
+  color: rgb(204, 246, 114);
+}
